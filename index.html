@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en-PH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gilbros Hardware &amp; Construction Supply</title>
+  <meta name="description" content="Gilbros Hardware & Construction Supply: cement, rebar, CHB, roofing, power tools, electrical and plumbing supplies. Contractor pricing and delivery across Metro Manila.">
+  <meta name="theme-color" content="#0A1FB0">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Barlow+Condensed:wght@600;700&family=Barlow:wght@600&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-drill" viewBox="0 0 24 24"><path d="M3 7h11v6H3z"/><path d="M14 8.5h3.5L21 10l-3.5 1.5H14"/><path d="M6 13l-1 7h5l1.5-7"/><path d="M5 10h2"/></symbol>
+    <symbol id="i-brick" viewBox="0 0 24 24"><path d="M3 5h18v14H3z"/><path d="M3 9.7h18M3 14.3h18M9 5v4.7M15 9.7v4.6M9 14.3V19"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4.5 13.5H11L10 22l8.5-11.5H12z"/></symbol>
+    <symbol id="i-pipe" viewBox="0 0 24 24"><path d="M3 8h8a4 4 0 0 1 4 4v9"/><path d="M3 12h7a1 1 0 0 1 1 1v8"/><path d="M2 6v8M9 19h8"/></symbol>
+    <symbol id="i-helmet" viewBox="0 0 24 24"><path d="M4 16a8 8 0 0 1 16 0"/><path d="M2 16h20v2.5H2z"/><path d="M12 8v4M9 9v3M15 9v3"/></symbol>
+    <symbol id="i-anchor" viewBox="0 0 24 24"><path d="M8 3h8l1 4H7z"/><path d="M10 7v13l2 1.5 2-1.5V7"/><path d="M10 11h4M10 14h4M10 17h4"/></symbol>
+    <symbol id="i-level" viewBox="0 0 24 24"><path d="M2 9h20v6H2z"/><circle cx="12" cy="12" r="1.6"/><path d="M8 9v6M16 9v6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.5 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/></symbol>
+    <symbol id="i-clip" viewBox="0 0 24 24"><path d="M8 4h8v3H8z"/><path d="M6 5.5H4.5V21h15V5.5H18"/><path d="M8 11h8M8 15h5"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h12v10H2zM14 9h4l3 3.5V16h-7"/><circle cx="6" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 17v3h16v-3"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4-2v-4z"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+  </defs>
+</svg>
+
+<div class="util">
+  <div class="wrap">
+    <span class="hide-sm">Open Mon–Sat 7 AM – 6 PM · Sun 8 AM – 12 NN</span>
+    <label for="branchSel" class="sr">Your branch</label>
+    <span>Branch:</span>
+    <select id="branchSel"></select>
+    <span class="spacer"></span>
+    <span class="hide-sm">Prices</span>
+    <span class="vat" role="group" aria-label="Show prices">
+      <button id="vatEx" aria-pressed="false">Excl. VAT</button>
+      <button id="vatInc" aria-pressed="true">Incl. 12% VAT</button>
+    </span>
+    <button id="themeBtn" title="Switch light / dark" aria-label="Switch light or dark theme"><svg class="icon" style="width:16px;height:16px;vertical-align:-3px"><use href="#i-moon"/></svg></button>
+  </div>
+</div>
+
+<header class="main" id="hdr">
+  <div class="wrap bar">
+    <a class="logo" href="#home" aria-label="Gilbros Hardware &amp; Construction Supply home"><span class="logo-top" aria-hidden="true"><i></i><i></i><i></i></span><span class="logo-word">GILBROS</span><span class="logo-bot"><span class="lb-bar" aria-hidden="true"></span><span class="ticks" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="tag">Hardware &amp; Construction Supply</span></span></a>
+    <form class="search" id="searchForm" role="search">
+      <label for="q" class="sr">Search products or SKU</label>
+      <input id="q" placeholder="Search 8,000+ products, brands or SKU (e.g. GB-CEM-T1-40)" autocomplete="off">
+      <button type="submit" aria-label="Search"><svg class="icon"><use href="#i-search"/></svg></button>
+    </form>
+    <span class="spacer"></span>
+    <a class="hbtn" href="#trade"><svg class="icon"><use href="#i-clip"/></svg><span class="lbl">Quote list</span><span class="count num" id="quoteCount">0</span></a>
+    <button class="hbtn" id="cartBtn"><svg class="icon"><use href="#i-cart"/></svg><span class="lbl">Cart</span><span class="count num" id="cartCount">0</span></button>
+  </div>
+  <nav class="cats" aria-label="Categories">
+    <div class="wrap" id="catNav"></div>
+  </nav>
+  <div class="mega" id="mega" hidden></div>
+</header>
+
+<main class="wrap" id="app"></main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#home" aria-label="Gilbros Hardware &amp; Construction Supply home"><span class="logo-top" aria-hidden="true"><i></i><i></i><i></i></span><span class="logo-word">GILBROS</span><span class="logo-bot"><span class="lb-bar" aria-hidden="true"></span><span class="ticks" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="tag">Hardware &amp; Construction Supply</span></span></a>
+      <p style="max-width:40ch;margin-top:14px">Four branches in Metro Manila, Rizal and Cavite. Same-day delivery in Metro Manila on orders placed before 2 PM. All prices in Philippine pesos (₱), VAT-inclusive unless stated.</p><div class="pay" aria-label="Payment methods"><span>GCash</span><span>Maya</span><span>Visa / Mastercard</span><span>Bank transfer</span><span>COD (Metro Manila)</span></div>
+    </div>
+    <div><h4>Shop</h4><a href="#cat-power-tools">Power Tools</a><a href="#cat-building-materials">Building Materials</a><a href="#cat-electrical">Electrical</a><a href="#cat-safety">Safety &amp; PPE</a></div>
+    <div><h4>Trade</h4><a href="#trade">Contractor portal</a><a href="#trade">Bulk quote (RFQ)</a><a href="#trade">Credit accounts</a></div>
+    <div><h4>Help</h4><a href="#home">Delivery zones</a><a href="#home">Branch locator</a><a href="#home">Returns policy</a></div>
+  </div>
+</footer>
+
+<div id="layer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
